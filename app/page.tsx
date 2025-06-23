@@ -254,18 +254,19 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-rose-400 text-rose-600 hover:bg-rose-50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              asChild
-            >
-              <Link href={siteData.social.instagram} target="_blank">
+           
+
+    <Link href={siteData.social.instagram} target="_blank">
+             <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-rose-400 text-rose-600 hover:bg-rose-50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+              >
                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 <span className="hidden sm:inline">Follow on Instagram</span>
-                <span className="sm:hidden">Follow on IG</span>
+              <span className="sm:hidden">Follow on IG</span>
+              </Button>
               </Link>
-            </Button>
           </div>
         </div>
       </section>
