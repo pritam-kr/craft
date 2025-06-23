@@ -36,18 +36,17 @@ export default function HomePage() {
             >
               {siteData.hero.buttons.primary}
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-rose-400 text-rose-600 hover:bg-rose-50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              asChild
-            >
-              <Link href={siteData.social.instagram} target="_blank">
+            <Link href={siteData.social.instagram} target="_blank">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-rose-400 text-rose-600 hover:bg-rose-50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+              >
                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 <span className="hidden sm:inline">{siteData.hero.buttons.secondary}</span>
                 <span className="sm:hidden">DM on Instagram</span>
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -210,17 +209,16 @@ export default function HomePage() {
               {siteData.contact.title}
             </h2>
             <p className="text-base sm:text-xl text-gray-700 mb-6 sm:mb-8 px-4">{siteData.contact.subtitle}</p>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mb-6 sm:mb-8"
-              asChild
-            >
-              <Link href={siteData.social.instagram} target="_blank">
+            <Link href={siteData.social.instagram} target="_blank">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mb-6 sm:mb-8 w-full sm:w-auto"
+              >
                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 <span className="hidden sm:inline">Message on Instagram</span>
                 <span className="sm:hidden">Message on IG</span>
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
 
           <ContactForm
